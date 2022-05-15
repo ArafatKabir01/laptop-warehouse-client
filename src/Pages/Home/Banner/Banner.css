@@ -1,0 +1,13 @@
+.banner-img{
+    width: 1000px;
+    height: 900px;
+}
+.benner-info{
+    margin-top: 100px;
+}
+@media only screen and (max-width: 600px) {
+    .banner-img{
+          width: 300px;
+          height: 250px;
+    }
+  }

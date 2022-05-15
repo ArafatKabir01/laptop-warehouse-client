@@ -1,0 +1,68 @@
+.form-container{
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1254.246%2c137.838C1288.898%2c136.904%2c1319.611%2c119.901%2c1339.499%2c91.509C1363.539%2c57.189%2c1386.32%2c14.392%2c1366.627%2c-22.594C1346.237%2c-60.888%2c1297.462%2c-72.418%2c1254.246%2c-68.604C1217.235%2c-65.338%2c1190.007%2c-37.702%2c1171.668%2c-5.388C1153.626%2c26.402%2c1142.386%2c64.663%2c1160.644%2c96.33C1178.916%2c128.022%2c1217.677%2c138.824%2c1254.246%2c137.838' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M312.444%2c425.29C354.716%2c425.507%2c396.429%2c407.321%2c417.369%2c370.599C438.138%2c334.177%2c432.394%2c289.164%2c410.435%2c253.446C389.544%2c219.464%2c352.28%2c202.01%2c312.444%2c199.928C267.895%2c197.6%2c218.114%2c204.061%2c194.946%2c242.183C171.166%2c281.312%2c184.64%2c330.996%2c209.368%2c369.532C231.979%2c404.769%2c270.577%2c425.075%2c312.444%2c425.29' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M558.2910225886931 68.38852594269952L692.4436172783174 101.83652445289421 725.8916157885121-32.31607023673017 591.7390210988877-65.76406874692486z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1389.997536102046 316.9209398163007L1441.4315525139068 195.74999056860082 1320.260603266207 144.31597415674008 1268.8265868543463 265.48692340443995z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M423.4807968954614 481.1329085263654L554.0565352020217 547.6645702800823 620.5881969557387 417.08883197352213 490.0124586491784 350.55717021980513z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1169.526%2c290.109C1211.393%2c288.601%2c1245.299%2c260.073%2c1266.226%2c223.78C1287.13%2c187.527%2c1294.354%2c144.151%2c1275.12%2c106.985C1254.312%2c66.777%2c1214.785%2c38.067%2c1169.526%2c36.928C1122.366%2c35.741%2c1077.481%2c60.338%2c1054.307%2c101.429C1031.509%2c141.853%2c1035.77%2c191.601%2c1059.957%2c231.21C1083.119%2c269.14%2c1125.112%2c291.709%2c1169.526%2c290.109' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.form-title{
+    font-size: 35px;
+    font-weight: 400;
+    color: rgb(10, 10, 29);
+}
+.level{
+    display: block;
+    padding: 8px;
+    font-size: 18px;
+}
+.group-input{
+    margin-bottom: 20px;
+
+}
+.group-input input{
+    width: 415px;
+    height: 55px;
+    border: 1px solid gainsboro;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 24px;
+}
+.submite-button{
+    width: 415px;
+    height: 55px;
+    background-color:coral;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: aliceblue;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.or-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 20px;
+
+}
+.or-section hr{
+    width: 200px;
+    margin: 18px;
+}
+.google-button{
+    width: 415px;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: black;
+    
+}
+
