@@ -1,23 +1,66 @@
 [
     {
-      "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
-      "name": "Eye Exam For Glasses",
-      "img": "https://i.ibb.co/zRb6w20/service1.jpg",
-      "price": 400,
-      "text": "What can you expect during an Eye Exam for Glasses at Advanced Eye Clinic?"
+      "name": "HP 15s-du1087TU Intel Celeron N4020 15.6 inch FHD Laptop with Win 10",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1087tu/15s-du1087tu-01-228x228.jpg",
+      "price": 34500,
+      "quantity":120,
+      "supplier":"HP",
+      "text": "Intel Celeron Processor N4020 (4M Cache, up to 2.80 GHz) 4GB DDR4 RAM + 1TB HDD15.6 inch Full HD 1920x1080 DisplayWindows 10 Home"
     },
     {
-      "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
-      "name": "Eye Exam For Contact Lenses",
-      "img": "https://i.ibb.co/3fCMHHz/service2.webp",
-      "price": 450,
-      "text": "There is a HUGE difference between an eye exam for glasses and an eye exam for contact lenses."
+      "name": "Lenovo IdeaPad Slim 3i 15IGL Intel Celeron N4020 15.6 HD Laptop",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-slim-3i/ideapad-slim-3i-0010-228x228.jpg",
+      "price": 34800,
+      "quantity":20,
+      "supplier":"Lenovo",
+      "text": "Processor: Intel Celeron N4020 (4M Cache, 1.10 GHz up to 2.80 GHz)Memory: 4GB DDR4 2400MHz RAM Storage: 1TB 5400rpm 2.5 HDD Display: 15.6″ HD (1366×768)"
     },
     {
-      "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
-      "name": "Medical Diabetic Eye Exam",
-      "price": 500,
-      "img": "https://i.ibb.co/0ybSzkd/service3.jpg",
-      "text": "An annual eye exam for patients with Diabetes."
+      "name": "Asus Vivobook X515MA Celeron N4500 15.6 HD Laptop",
+      "price": 39800,
+      "quantity":40,
+      "supplier":"Asus",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15-x515ea/vivobook-15-x515ea-01-228x228.jpg",
+      "text": "Processor: Intel Celeron N4500 (4M Cache, 1.10 GHz up to 2.80 GHz) Memory: 4GB DDR4 RAMStorage: 1TB 5400RPM HDDDisplay: 15.6 HD (1366 x 768)"
+    },
+    {
+      "name": "HP 15s-du1116TU Pentium Silver N5030 15.6 HD Laptop",
+      "price": 34800,
+      "quantity":220,
+      "supplier":"HP",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/hp-laptop/15s-du1116tu/15s-du1116tu-01-228x228.jpg",
+      "text": "Processor: Intel Celeron N4500 (4M Cache, 1.10 GHz up to 2.80 GHz) Memory: 4GB DDR4 RAMStorage: 1TB 5400RPM HDDDisplay: 15.6 HD (1366 x 768)"
+    },
+    {
+      "name": "AVITA Essential 14 Celeron N4020 256GB SSD 14 Full HD Laptop Concrete Grey Color",
+      "price": 30800,
+      "quantity":80,
+      "supplier":"AVITA",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/avita/essential-14/essential-14-01-228x228.jpg",
+      "text": "Processor: Intel Celeron N4500 (4M Cache, 1.10 GHz up to 2.80 GHz) Memory: 4GB DDR4 RAMStorage: 1TB 5400RPM HDDDisplay: 15.6 HD (1366 x 768)"
+    },
+    {
+      "name": "ASUS VivoBook 15 X515EA Core i3 11th Gen 15.6 FHD Laptop",
+      "price": 50800,
+      "quantity":70,
+      "supplier":"ASUS",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15/vivobook-15-04-228x228.jpg",
+      "text": "Processor: Intel Celeron N4500 (4M Cache, 1.10 GHz up to 2.80 GHz) Memory: 4GB DDR4 RAMStorage: 1TB 5400RPM HDDDisplay: 15.6 HD (1366 x 768)"
+    },
+    {
+      "name": "ASUS VivoBook S15 M533IA Ryzen 7 4700U 15.6 FHD Laptop",
+      "price": 44800,
+      "quantity":60,
+      "supplier":"ASUS",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/m533ia/m533ia-0001-228x228.jpg",
+      "text": "Processor: Ryzen 7 4700U Memory: 4GB DDR4 RAMStorage: 1TB 5400RPM HDDDisplay: 15.6 HD (1366 x 768)"
+    },
+    {
+      "name": "Xiaomi RedmiBook Pro 14 Ryzen 5 5500U 14 Laptop",
+      "price": 71800,
+      "quantity":190,
+      "supplier":"Xiaomi",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/mi-laptop/redmibook-pro-14/redmibook-pro-14-01-228x228.jpg",
+      "text": "Processor: AMD Ryzen 5 5500U (8M Cache, 2.1GHz up to 4.0GHz, 6 cores)Memory: 16 GB DDR4 RAMStorage: 512 GB SSDDisplay: 14 (2560 x 1600) FHD+"
     }
 ]

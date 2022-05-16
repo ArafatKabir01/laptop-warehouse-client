@@ -46,7 +46,7 @@ const Login = () => {
     }
     
     return (
-            <div className='form-container text-white mb-5'>
+            <div className='form-container mb-5'>
                 <h2 className='form-title text-danger fw-bolder fs-2 mt-4'>Log In</h2>
                 <form onSubmit={hendleSubmit}>
                     <div className='group-input'>
@@ -60,7 +60,7 @@ const Login = () => {
                     {errorElement}
                     <input type='submit' className='submite-button'></input>
                 </form>
-                <p style={{marginTop:'8px'}}>New to Doctor room? <Link to='/signup'>please signUp</Link></p>
+                <p style={{marginTop:'8px'}}>New to Laptop Warehouse?<Link to='/signup'>please signUp</Link></p>
                 <div className='or-section'>
                     <hr />
                     <span>or</span>

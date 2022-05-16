@@ -54,7 +54,7 @@ const Signup = () => {
     }
 
     return (
-        <div className='form-container text-white mb-5'>
+        <div className='form-container mb-5'>
         <h2 className='form-title text-danger fw-bolder fs-2 mt-4'>Sign Up</h2>
         <form onSubmit={hendleSubmite}>
             <div className='group-input'>
