@@ -19,9 +19,14 @@ const Header = () => {
                 <Nav >
                     <Link className='text-decoration-none ms-4 text-info fs-5' to="/">Home</Link>
                     <Link className='text-decoration-none ms-4 text-info fs-5' to="about">About Me</Link>
-                    <Link className='text-decoration-none ms-4 text-info fs-5' to="booking">Booking</Link>
-                    <Link className='text-decoration-none ms-4 text-info fs-5' to="addproduct">Add Product</Link>
+                    {/* <Link className='text-decoration-none ms-4 text-info fs-5' to="booking">Booking</Link> */}
                     <Link className='text-decoration-none ms-4 text-info fs-5' to="blog">Blog</Link>
+                    {
+                        user && <>
+                        <Nav.Link className='text-decoration-none ms-4 text-info fs-5' as={Link} to="addproduct">Add Product</ Nav.Link>
+                        <Nav.Link className='text-decoration-none ms-4 text-info fs-5' as={Link} to="manageproduct">Manage Product</ Nav.Link>
+                        </>
+                    }
                     {
                               user ? 
                              <Button onClick={hendleSignOut} style={{marginLeft:'10px'}}>Sing Out</Button> :
