@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
+import AddProduct from './AddProduct/AddProduct';
 import './App.css';
 import About from './Pages/About/About';
 import Blog from './Pages/Blog/Blog';
@@ -28,9 +29,11 @@ function App() {
           <RequireAuth>
             <Booking></Booking>
           </RequireAuth>
-
-        
-
+        }></Route>
+        <Route path='/addproduct' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
         }></Route>
         
         {/* <Route path='/signup' element={}></Route> */}

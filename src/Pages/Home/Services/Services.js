@@ -11,10 +11,10 @@ const Services = () => {
     },[])
     return (
         <div className='container'>
-            <h2 className='text-center mt-4 mb-4' >My Services</h2>
+            <h2 className='text-center mt-4 mb-4' >Products</h2>
             <div className='d-flex justify-content-center flex-wrap '>
                 {
-                    services.map(service => <Service key={service.id} service={service}></Service>)
+                    services.map(service => <Service key={service._id} service={service}></Service>)
                 }
             </div>
         </div>
