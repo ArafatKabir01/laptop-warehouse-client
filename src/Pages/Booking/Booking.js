@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
-import { useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Booking = () => {
+    const navigate  = useNavigate()
     const {productid} = useParams()
     const[detailsProduct , setDtailsProduct] = useState({})
     useEffect(()=>{
@@ -45,11 +47,15 @@ const hadleDelivered = quantity => {
             window.location.reload()
         });
     };
+    const manageInventory = ()=>{
+        navigate('/manageproduct')
+        
+    }
    
 
     return (
         <div>
-            <div className='service-card container'>
+            <div className='service-card container mt-3'>
             <img src={detailsProduct.img}></img>
             <h4 className='ms-2 mb-3'>{detailsProduct.name}</h4>
             <p className='mt-4 mb-3 ms-3'>{detailsProduct.text}</p>
@@ -60,6 +66,7 @@ const hadleDelivered = quantity => {
             <form className='text-center' onSubmit={handleSubmit(onSubmit)}>
       <input type="number" {...register("quantity")} placeholder='Product Quantity' required /><br/><br/>
       <input type="submit" value={'Update Quantity'} />
+      <Button onClick={manageInventory}  className='ms-3'>ManageInventory</Button>
     </form><br/>
           
         </div>

@@ -1,9 +1,12 @@
+
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import ManageProducts from '../ManageProducts/ManageProducts';
 
 const ManageProduct = () => {
     const [products , setProducts] = useState([])
+    const navigate = useNavigate()
     useEffect(()=>{
         fetch('http://localhost:5000/product')
         .then(res => res.json())
@@ -26,9 +29,14 @@ const ManageProduct = () => {
 
         }
     }
+    const addproduct = ()=>{
+      navigate("/addproduct")
+    }
  
 return (
-  <Table striped bordered hover size="sm">
+<div>
+  
+<Table striped bordered hover size="sm">
    <thead>
     <tr>
       <th>Product Name</th>
@@ -45,9 +53,13 @@ return (
           <td>{product.quantity} <button onClick={()=>handleDelete(product._id)} className='ms-4'>Delete</button></td>
         </tr> 
         </tbody>
+        
       )   
   }
+  
   </Table> 
+  <button onClick={addproduct} className='ms-5 mb-4 mt-4'>Add Product</button>
+</div>
 );  
 };
 

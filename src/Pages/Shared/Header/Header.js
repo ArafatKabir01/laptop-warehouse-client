@@ -18,7 +18,6 @@ const Header = () => {
                 </Nav>
                 <Nav >
                     <Link className='text-decoration-none ms-4 text-info fs-5' to="/">Home</Link>
-                    <Link className='text-decoration-none ms-4 text-info fs-5' to="about">About Me</Link>
                     {/* <Link className='text-decoration-none ms-4 text-info fs-5' to="booking">Booking</Link> */}
                     <Link className='text-decoration-none ms-4 text-info fs-5' to="blog">Blog</Link>
                     {
