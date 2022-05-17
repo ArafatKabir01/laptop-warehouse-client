@@ -9,6 +9,7 @@ const Service = ({service}) => {
     const handleUpdate = () => {
         navigate(`/booking/${_id}`)
     }
+    
     return (
         <div className='service-card'>
             <img src={img}></img>

@@ -24,10 +24,26 @@ const Booking = () => {
         })
         .then(res => res.json())
         .then(result => {
-            console.log(result)
-            const remaining = detailsProduct;
-            setDtailsProduct(remaining);
+            console.log(result);
+            window.location.reload()
+        });
+    };
+
+const hadleDelivered = quantity => {
+    const newQuantity = parseFloat(quantity) - 1;
+    console.log(newQuantity)
+        const url1 = `http://localhost:5000/deliveredproduct/${productid}`
+        fetch(url1,{
+            method:'PUT',
+            headers:{'content-type':'application/json'},
+            body: JSON.stringify({newQuantity})
+
         })
+        .then(res => res.json())
+        .then(result => {
+            console.log(result);
+            window.location.reload()
+        });
     };
    
 
@@ -40,17 +56,14 @@ const Booking = () => {
             <p className='ms-3 mb-0'>${detailsProduct.price}</p>
             <p className='ms-3 mb-0'>Quantity: {detailsProduct.quantity}</p>
             <p className='ms-3 mb-0'>Supplier: {detailsProduct.supplier}</p>
-            <Button className='ms-3'></Button>
-        </div>
-        <form className='text-center' onSubmit={handleSubmit(onSubmit)}>
-      {/* <input type='text' {...register("name")} placeholder='Porduct Name' required/><br/><br/>
-      <input type="number" {...register("price")} placeholder='Price' required /><br/><br/> */}
+            <Button onClick={()=>hadleDelivered(detailsProduct.quantity)}  className='ms-3'>Delivered</Button>
+            <form className='text-center' onSubmit={handleSubmit(onSubmit)}>
       <input type="number" {...register("quantity")} placeholder='Product Quantity' required /><br/><br/>
-      {/* <input {...register("supplier")} placeholder='Supplier Name' required/><br/><br/> */}
-      {/* <input {...register("img")} placeholder='img url' required/><br/><br/>
-      <textarea {...register("text")} placeholder='Product Description' required/><br/><br/> */}
       <input type="submit" value={'Update Quantity'} />
     </form><br/>
+          
+        </div>
+      
         </div>
     );
 };

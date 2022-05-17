@@ -1,20 +1,26 @@
-import { jsonEval } from '@firebase/util';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { useLocation } from 'react-router-dom';
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/product`
-        fetch(url,{
-            method:'POST',
-            headers:{'content-type':'application/json'},
-            body: JSON.stringify(data)
+        const proceed = window.confirm(`you added ${data.name}?`)
+        if(proceed){
+            const url = `http://localhost:5000/product`
+            fetch(url,{
+                method:'POST',
+                headers:{'content-type':'application/json'},
+                body: JSON.stringify(data)
+    
+            })
+            .then(res => res.json())
+            .then(result => console.log(result))
+            window.location.reload()
 
-        })
-        .then(res => res.json())
-        .then(result => console.log(result))
+        }
+
     };
     return (
         <div>
