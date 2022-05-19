@@ -8,7 +8,7 @@ const AddProduct = () => {
         console.log(data)
         const proceed = window.confirm(`you added ${data.name}?`)
         if(proceed){
-            const url = `http://localhost:5000/product`
+            const url = `https://hidden-tundra-48655.herokuapp.com/product`
             fetch(url,{
                 method:'POST',
                 headers:{'content-type':'application/json'},

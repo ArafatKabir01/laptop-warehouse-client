@@ -9,7 +9,7 @@ const Booking = () => {
     const {productid} = useParams()
     const[detailsProduct , setDtailsProduct] = useState({})
     useEffect(()=>{
-        const url = `http://localhost:5000/booking/${productid}`
+        const url = `https://hidden-tundra-48655.herokuapp.com/booking/${productid}`
         fetch(url)
         .then(res => res.json())
         .then(data => setDtailsProduct(data))
@@ -17,7 +17,7 @@ const Booking = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data)
-        const url = `http://localhost:5000/product/${productid}`
+        const url = `https://hidden-tundra-48655.herokuapp.com/product/${productid}`
         fetch(url,{
             method:'PUT',
             headers:{'content-type':'application/json'},
@@ -34,7 +34,7 @@ const Booking = () => {
 const hadleDelivered = quantity => {
     const newQuantity = parseFloat(quantity) - 1;
     console.log(newQuantity)
-        const url1 = `http://localhost:5000/deliveredproduct/${productid}`
+        const url1 = `https://hidden-tundra-48655.herokuapp.com/deliveredproduct/${productid}`
         fetch(url1,{
             method:'PUT',
             headers:{'content-type':'application/json'},

@@ -8,7 +8,7 @@ const ManageProduct = () => {
     const [products , setProducts] = useState([])
     const navigate = useNavigate()
     useEffect(()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://hidden-tundra-48655.herokuapp.com/product')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
@@ -16,7 +16,7 @@ const ManageProduct = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('are you sure?')
         if(proceed){
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://hidden-tundra-48655.herokuapp.com/product/${id}`
             fetch(url , {
                 method:"DELETE"
             })
